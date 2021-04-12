@@ -2,15 +2,15 @@
 
 It is ensured that the necessary certificates are created to encrypt the traffic between Kafka Brokers and clients.
 
-**Creating Certificates**
+### Creating Certificates
 * chmod +x creating_certificates_for_kafka.sh
 * ./creating_certificates_for_kafka.sh
 
 ***NOTE:** Before running the script, the **SUBJECT** information in it must be updated.*
 
-<img src="https://github.com/tolgaakkapulu/Enabling_SSL_for_Kafka_Clients/blob/main/creating_certificates_for_kafka.png">
+<img src="https://github.com/tolgaakkapulu/Enabling_SSL_for_Kafka_Clients/blob/main/creating_certificates_for_kafka.png"><br><br>
 
-**Kafka Configs**
+### Kafka Configs
 ```
 listeners=PLAINTEXT://localhost:9092,SSL://localhost:9093
 security.inter.broker.protocol=PLAINTEXT
